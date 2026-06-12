@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: "aroura-writes/Gserene"
+  branch: main
+  base_url: https://decap-cms-oauth-vercel.vercel.app # Secure GitHub Gateway Handler
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "journal"
+    label: "Journal Posts"
+    folder: "journal"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Category Tag", name: "category", widget: "string", default: "Essays" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Art Photo Link (URL)", name: "image_url", widget: "string" }
+      - { label: "Photo Caption Frame", name: "caption", widget: "string" }
+      - { label: "Manuscript Body (WYSIWYG)", name: "body", widget: "markdown" }
