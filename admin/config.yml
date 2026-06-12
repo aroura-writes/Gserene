@@ -2,7 +2,8 @@ backend:
   name: github
   repo: "aroura-writes/Gserene" # Put your exact username here!
   branch: main
-  base_url: https://oauth.decapcms.org
+  auth_type: implicit
+  app_id: "Ov23li3Adfe2gcOLkYRh"
 media_folder: "images"
 public_folder: "/images"
 
