@@ -2,8 +2,7 @@ backend:
   name: github
   repo: "aroura-writes/Gserene" # Put your exact username here!
   branch: main
-  base_url: https://api.netlify.com
-  auth_endpoint: /v1/auth
+  base_url: https://oauth.decapcms.org
 media_folder: "images"
 public_folder: "/images"
 
