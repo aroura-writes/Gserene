@@ -1,9 +1,9 @@
 backend:
   name: github
-  repo: "aroura-writes/Gserene"
+  repo: "aroura-writes/Gserene" # Put your exact username here!
   branch: main
-  base_url: https://decap-cms-oauth-vercel.vercel.app # Secure GitHub Gateway Handler
-
+  base_url: https://api.netlify.com
+  auth_endpoint: /v1/auth
 media_folder: "images"
 public_folder: "/images"
 
